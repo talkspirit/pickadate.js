@@ -5,25 +5,25 @@
  * Switch the direction - only really necessary if
  * it hasn’t already been applied higher up in the DOM.
  */
-.picker {
+.pickadate {
   direction: rtl;
 }
 /**
  * Flip around the “next” and “previous” buttons.
  */
-.picker__nav--next {
+.pickadate__nav--next {
   right: auto;
   left: -1em;
 }
-.picker__nav--prev {
+.pickadate__nav--prev {
   left: auto;
   right: -1em;
 }
-.picker__nav--next:before {
+.pickadate__nav--next:before {
   border-left: 0;
   border-right: 0.75em solid #000000;
 }
-.picker__nav--prev:before {
+.pickadate__nav--prev:before {
   border-right: 0;
   border-left: 0.75em solid #000000;
 }

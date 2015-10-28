@@ -4,13 +4,13 @@
 /**
  * The picker box.
  */
-.picker__box {
+.pickadate__box {
   padding: 0 1em;
 }
 /**
  * The header containing the month and year stuff.
  */
-.picker__header {
+.pickadate__header {
   text-align: center;
   position: relative;
   margin-top: .75em;
@@ -18,14 +18,14 @@
 /**
  * The month and year labels.
  */
-.picker__month,
-.picker__year {
+.pickadate__month,
+.pickadate__year {
   font-weight: 500;
   display: inline-block;
   margin-left: .25em;
   margin-right: .25em;
 }
-.picker__year {
+.pickadate__year {
   color: #999999;
   font-size: .8em;
   font-style: italic;
@@ -33,8 +33,8 @@
 /**
  * The month and year selectors.
  */
-.picker__select--month,
-.picker__select--year {
+.pickadate__select--month,
+.pickadate__select--year {
   border: 1px solid #b7b7b7;
   height: 2em;
   padding: .5em;
@@ -42,26 +42,26 @@
   margin-right: .25em;
 }
 @media (min-width: 24.5em) {
-  .picker__select--month,
-  .picker__select--year {
+  .pickadate__select--month,
+  .pickadate__select--year {
     margin-top: -0.5em;
   }
 }
-.picker__select--month {
+.pickadate__select--month {
   width: 35%;
 }
-.picker__select--year {
+.pickadate__select--year {
   width: 22.5%;
 }
-.picker__select--month:focus,
-.picker__select--year:focus {
+.pickadate__select--month:focus,
+.pickadate__select--year:focus {
   border-color: #0089ec;
 }
 /**
  * The month navigation buttons.
  */
-.picker__nav--prev,
-.picker__nav--next {
+.pickadate__nav--prev,
+.pickadate__nav--next {
   position: absolute;
   padding: .5em 1.25em;
   width: 1em;
@@ -70,31 +70,31 @@
   top: -0.25em;
 }
 @media (min-width: 24.5em) {
-  .picker__nav--prev,
-  .picker__nav--next {
+  .pickadate__nav--prev,
+  .pickadate__nav--next {
     top: -0.33em;
   }
 }
-.picker__nav--prev {
+.pickadate__nav--prev {
   left: -1em;
   padding-right: 1.25em;
 }
 @media (min-width: 24.5em) {
-  .picker__nav--prev {
+  .pickadate__nav--prev {
     padding-right: 1.5em;
   }
 }
-.picker__nav--next {
+.pickadate__nav--next {
   right: -1em;
   padding-left: 1.25em;
 }
 @media (min-width: 24.5em) {
-  .picker__nav--next {
+  .pickadate__nav--next {
     padding-left: 1.5em;
   }
 }
-.picker__nav--prev:before,
-.picker__nav--next:before {
+.pickadate__nav--prev:before,
+.pickadate__nav--next:before {
   content: " ";
   border-top: .5em solid transparent;
   border-bottom: .5em solid transparent;
@@ -104,20 +104,20 @@
   display: block;
   margin: 0 auto;
 }
-.picker__nav--next:before {
+.pickadate__nav--next:before {
   border-right: 0;
   border-left: 0.75em solid #000000;
 }
-.picker__nav--prev:hover,
-.picker__nav--next:hover {
+.pickadate__nav--prev:hover,
+.pickadate__nav--next:hover {
   cursor: pointer;
   color: #000000;
   background: #b1dcfb;
 }
-.picker__nav--disabled,
-.picker__nav--disabled:hover,
-.picker__nav--disabled:before,
-.picker__nav--disabled:before:hover {
+.pickadate__nav--disabled,
+.pickadate__nav--disabled:hover,
+.pickadate__nav--disabled:before,
+.pickadate__nav--disabled:before:hover {
   cursor: default;
   background: none;
   border-right-color: #f5f5f5;
@@ -126,7 +126,7 @@
 /**
  * The calendar table of dates
  */
-.picker__table {
+.pickadate__table {
   text-align: center;
   border-collapse: collapse;
   border-spacing: 0;
@@ -137,18 +137,18 @@
   margin-bottom: .5em;
 }
 @media (min-height: 33.875em) {
-  .picker__table {
+  .pickadate__table {
     margin-bottom: .75em;
   }
 }
-.picker__table td {
+.pickadate__table td {
   margin: 0;
   padding: 0;
 }
 /**
  * The weekday labels
  */
-.picker__weekday {
+.pickadate__weekday {
   width: 14.285714286%;
   font-size: .75em;
   padding-bottom: .25em;
@@ -157,22 +157,22 @@
   /* Increase the spacing a tad */
 }
 @media (min-height: 33.875em) {
-  .picker__weekday {
+  .pickadate__weekday {
     padding-bottom: .5em;
   }
 }
 /**
  * The days on the calendar
  */
-.picker__day {
+.pickadate__day {
   padding: .3125em 0;
   font-weight: 200;
   border: 1px solid transparent;
 }
-.picker__day--today {
+.pickadate__day--today {
   position: relative;
 }
-.picker__day--today:before {
+.pickadate__day--today:before {
   content: " ";
   position: absolute;
   top: 2px;
@@ -182,54 +182,54 @@
   border-top: 0.5em solid #0059bc;
   border-left: .5em solid transparent;
 }
-.picker__day--disabled:before {
+.pickadate__day--disabled:before {
   border-top-color: #aaaaaa;
 }
-.picker__day--outfocus {
+.pickadate__day--outfocus {
   color: #dddddd;
 }
-.picker__day--infocus:hover,
-.picker__day--outfocus:hover {
+.pickadate__day--infocus:hover,
+.pickadate__day--outfocus:hover {
   cursor: pointer;
   color: #000000;
   background: #b1dcfb;
 }
-.picker__day--highlighted {
+.pickadate__day--highlighted {
   border-color: #0089ec;
 }
-.picker__day--highlighted:hover,
-.picker--focused .picker__day--highlighted {
+.pickadate__day--highlighted:hover,
+.pickadate--focused .pickadate__day--highlighted {
   cursor: pointer;
   color: #000000;
   background: #b1dcfb;
 }
-.picker__day--selected,
-.picker__day--selected:hover,
-.picker--focused .picker__day--selected {
+.pickadate__day--selected,
+.pickadate__day--selected:hover,
+.pickadate--focused .pickadate__day--selected {
   background: #0089ec;
   color: #ffffff;
 }
-.picker__day--disabled,
-.picker__day--disabled:hover,
-.picker--focused .picker__day--disabled {
+.pickadate__day--disabled,
+.pickadate__day--disabled:hover,
+.pickadate--focused .pickadate__day--disabled {
   background: #f5f5f5;
   border-color: #f5f5f5;
   color: #dddddd;
   cursor: default;
 }
-.picker__day--highlighted.picker__day--disabled,
-.picker__day--highlighted.picker__day--disabled:hover {
+.pickadate__day--highlighted.pickadate__day--disabled,
+.pickadate__day--highlighted.pickadate__day--disabled:hover {
   background: #bbbbbb;
 }
 /**
  * The footer containing the "today", "clear", and "close" buttons.
  */
-.picker__footer {
+.pickadate__footer {
   text-align: center;
 }
-.picker__button--today,
-.picker__button--clear,
-.picker__button--close {
+.pickadate__button--today,
+.pickadate__button--clear,
+.pickadate__button--close {
   border: 1px solid #ffffff;
   background: #ffffff;
   font-size: .8em;
@@ -239,45 +239,45 @@
   display: inline-block;
   vertical-align: bottom;
 }
-.picker__button--today:hover,
-.picker__button--clear:hover,
-.picker__button--close:hover {
+.pickadate__button--today:hover,
+.pickadate__button--clear:hover,
+.pickadate__button--close:hover {
   cursor: pointer;
   color: #000000;
   background: #b1dcfb;
   border-bottom-color: #b1dcfb;
 }
-.picker__button--today:focus,
-.picker__button--clear:focus,
-.picker__button--close:focus {
+.pickadate__button--today:focus,
+.pickadate__button--clear:focus,
+.pickadate__button--close:focus {
   background: #b1dcfb;
   border-color: #0089ec;
   outline: none;
 }
-.picker__button--today:before,
-.picker__button--clear:before,
-.picker__button--close:before {
+.pickadate__button--today:before,
+.pickadate__button--clear:before,
+.pickadate__button--close:before {
   position: relative;
   display: inline-block;
   height: 0;
 }
-.picker__button--today:before,
-.picker__button--clear:before {
+.pickadate__button--today:before,
+.pickadate__button--clear:before {
   content: " ";
   margin-right: .45em;
 }
-.picker__button--today:before {
+.pickadate__button--today:before {
   top: -0.05em;
   width: 0;
   border-top: 0.66em solid #0059bc;
   border-left: .66em solid transparent;
 }
-.picker__button--clear:before {
+.pickadate__button--clear:before {
   top: -0.25em;
   width: .66em;
   border-top: 3px solid #ee2200;
 }
-.picker__button--close:before {
+.pickadate__button--close:before {
   content: "\D7";
   top: -0.1em;
   vertical-align: top;
@@ -285,14 +285,14 @@
   margin-right: .35em;
   color: #777777;
 }
-.picker__button--today[disabled],
-.picker__button--today[disabled]:hover {
+.pickadate__button--today[disabled],
+.pickadate__button--today[disabled]:hover {
   background: #f5f5f5;
   border-color: #f5f5f5;
   color: #dddddd;
   cursor: default;
 }
-.picker__button--today[disabled]:before {
+.pickadate__button--today[disabled]:before {
   border-top-color: #aaaaaa;
 }
 

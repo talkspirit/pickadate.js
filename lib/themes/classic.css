@@ -4,7 +4,7 @@
 /**
  * Note: the root picker element should *NOT* be styled more than what’s here.
  */
-.picker {
+.pickadate {
   font-size: 16px;
   text-align: left;
   line-height: 1.2;
@@ -19,19 +19,19 @@
 /**
  * The picker input element.
  */
-.picker__input {
+.pickadate__input {
   cursor: default;
 }
 /**
  * When the picker is opened, the input element is “activated”.
  */
-.picker__input.picker__input--active {
+.pickadate__input.pickadate__input--active {
   border-color: #0089ec;
 }
 /**
  * The holder is the only “scrollable” top-level container element.
  */
-.picker__holder {
+.pickadate__holder {
   width: 100%;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -44,13 +44,13 @@
 /**
  * Note: the root picker element should *NOT* be styled more than what’s here.
  */
-.picker {
+.pickadate {
   width: 100%;
 }
 /**
  * The holder is the base of the picker.
  */
-.picker__holder {
+.pickadate__holder {
   position: absolute;
   background: #ffffff;
   border: 1px solid #aaaaaa;
@@ -74,16 +74,16 @@
  * The frame and wrap work together to ensure that
  * clicks within the picker don’t reach the holder.
  */
-.picker__frame {
+.pickadate__frame {
   padding: 1px;
 }
-.picker__wrap {
+.pickadate__wrap {
   margin: -1px;
 }
 /**
  * When the picker opens...
  */
-.picker--opened .picker__holder {
+.pickadate--opened .pickadate__holder {
   max-height: 25em;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
